@@ -16,12 +16,11 @@ module.exports = function(sequelize, DataTypes){
         },
         password: {
             allowNull: true,
-            type: DataTypes.STRING,
-            default: NULL
+            type: DataTypes.STRING
         },
         authToken: {
-            type: DataTypes.STRING,
-            default: NULL
+            allowNull: true,
+            type: DataTypes.STRING
         },
         logged: {
             allowNull: false,
