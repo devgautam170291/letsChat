@@ -1,5 +1,17 @@
 module.exports = {
     Response: {
+        auth: {
+            success: {
+                status: 200,
+                success: true,
+                message: "Authentication Successful"
+            },
+            error: {
+                status: 401,
+                success: false,
+                message: "Authentication Failed"
+            }
+        },
         get: {
             success: {
                 status: 200,

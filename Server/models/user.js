@@ -7,15 +7,19 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.BIGINT.UNSIGNED
         },
         firstname: {
-            allowNull: true,
+            allowNull: false,
             type: DataTypes.STRING
         },
         lastname: {
             allowNull: true,
             type: DataTypes.STRING
         },
+        email: {
+            allowNull: false,
+            type: DataTypes.STRING
+        },
         password: {
-            allowNull: true,
+            allowNull: false,
             type: DataTypes.STRING
         },
         authToken: {
@@ -27,10 +31,6 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.BOOLEAN,
             default: false
         }
-    })
-
-    sequelize.sync({
-        force: true
     })
 
     return user;

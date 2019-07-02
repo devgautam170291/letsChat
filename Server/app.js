@@ -6,13 +6,12 @@ const fs = require('fs');
 const path = require('path');
 const env = require('dotenv').config({path: path.join(__dirname, '.env')});
 const system = require('../Server/lib/system');
-const routes = require('./config/routes');
 
 class Application {
   constructor(){
     this.express = Express();
-    this.exposeRoutes();
     this.loadMiddlewares();
+    this.exposeRoutes();
     this.errorHandler();
   }
 

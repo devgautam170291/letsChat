@@ -1,21 +1,22 @@
 const { Router } = require('express');
 const UserController = require('../controllers/user');
+const RouteUtility = require('../lib/routeUtility');
 
-class Signup {
+class Signup extends RouteUtility{
+
     constructor(){
+        super();
         this.router = Router();
-
         this.router.post('/', this.registerUser.bind(this));
     }
 
     registerUser(req, res, next){
-        let params = arguments;
-
-        console.log(params);
+        this._middlewareParams = arguments;
+        let params = this.getRequestParams('body');
 
         let ctl = new UserController();
         ctl.create(params)
-            .then()
+            .then(this.postSuccessResponse.bind(this))
             .catch()
     }
 }

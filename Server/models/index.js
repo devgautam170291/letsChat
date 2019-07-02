@@ -26,4 +26,7 @@ Object.keys(db).forEach(function(modelName) {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+//Recreate blank table
+sequelize.sync();
+
 module.exports = db;
