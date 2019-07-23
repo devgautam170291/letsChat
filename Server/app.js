@@ -4,7 +4,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const fs = require('fs');
 const path = require('path');
-const env = require('dotenv').config({path: path.join(__dirname, '.env')});
+const cors = require('cors');
+require('dotenv').config({path: path.join(__dirname, '.env')});
 const system = require('../Server/lib/system');
 
 class Application {
@@ -56,6 +57,7 @@ class Application {
     this.express.use(Express.json());
     this.express.use(Express.urlencoded({ extended: false }));
     this.express.use(cookieParser());
+    this.express.use(cors());
     this.express.use(Express.static(path.join(__dirname, 'public')));
     this.setupLogs();
   }

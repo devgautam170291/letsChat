@@ -8,7 +8,7 @@ const app = require('../app');
 const debug = require('debug')('server:server');
 const http = require('http');
 const path = require('path');
-const env = require('dotenv').config({path: path.join(__dirname, '../.env')});
+require('dotenv').config({path: path.join(__dirname, '../.env')});
 
 /**
  * Get port from environment and store in Express.
@@ -22,6 +22,8 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+const socketIO = require('socket.io')(server);
+
 
 /**
  * Listen on provided port, on all network interfaces.
