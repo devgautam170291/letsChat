@@ -1,0 +1,5 @@
+<div id="login">
+  <div *ngIf="(formDetails | json) != '{}'">
+    <app-form [formDetails]="formDetails" ></app-form>
+  </div>
+</div>

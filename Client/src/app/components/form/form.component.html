@@ -1,0 +1,48 @@
+<div *ngIf="formDetails.showForm" [ngStyle]="formDetails.formStyle" id="form">
+  <div class="form-container">
+    <div *ngIf="(formDetails['formHeader'] | json ) != '{}'" [ngStyle]="formDetails.formHeader.formHeaderStyle"
+         class="form-header">
+      <div *ngIf="formDetails.formHeader.title" class="form-title">
+        <h2 [ngStyle]="{color: formDetails.formHeader.color}">
+          {{formDetails.formHeader.title}}
+        </h2>
+      </div>
+    </div>
+    <div *ngIf="(formDetails.formBody | json) != '{}'" class="form-body" [ngStyle]="formDetails.formBody.formBodyStyle">
+      <div *ngIf="formDetails.formBody.formFields.length" class="form-fields-wrapper">
+        <div *ngFor="let fieldArr of formDetails.formBody.formFields" class="">
+          <div *ngIf="fieldArr.length < 4" [ngSwitch]="fieldArr.length" class="">
+            <div *ngSwitchCase="'1'" class="row">
+              <div class="col-md-12">
+                <div [ngSwitch]="fieldArr[0].field" class="form-group">
+                  <label *ngIf="fieldArr[0].label"
+                         [for]="fieldArr[0].id ? fieldArr[0].id :''">{{fieldArr[0].label}}</label>
+                  <input *ngSwitchCase="'input'"
+                         [id]="fieldArr[0].id ? fieldArr[0].id :''"
+                         [placeholder]="fieldArr[0].placeholder"
+                         [type]="fieldArr[0].field"
+                         class="form-control">
+                </div>
+              </div>
+            </div>
+            <div *ngSwitchCase="'2'" class="row">
+              <div class="col-md-6"></div>
+              <div class="col-md-6"></div>
+            </div>
+            <div *ngSwitchCase="'3'" class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+            </div>
+          </div>
+          <div *ngIf="fieldArr.length > 3" class="error-label">
+            <div class="alert alert-danger" role="alert">
+              Only 3 inline elements are allow
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="(formDetails.formFooter | json) != '{}'" class="form-footer"></div>
+  </div>
+</div>
