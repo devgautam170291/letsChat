@@ -1,0 +1,19 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Vast Shadow', cursive;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #e7e7e7;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #e7e7e7;
+}
+
+::placeholder {
+  color: #e7e7e7;
+}
