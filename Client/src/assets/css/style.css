@@ -17,3 +17,11 @@ h1, h2 {
 ::placeholder {
   color: #e7e7e7;
 }
+
+label {
+	font-weight: 600;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
