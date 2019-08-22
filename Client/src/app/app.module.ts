@@ -9,6 +9,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ForgetPasswordComponent } from './pages/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './pages/reset-password/reset-password.component';
+import { ChatboxComponent } from './pages/chatbox/chatbox.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ResetPasswordComponent } from './pages/reset-password/reset-password.co
     LoginComponent,
     SignupComponent,
     ForgetPasswordComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    ChatboxComponent
   ],
   imports: [
     BrowserModule,

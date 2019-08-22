@@ -2,8 +2,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2 {
-  font-family: 'Vast Shadow', cursive;
+/*h1, h2 {*/
+/*  font-family: 'Vast Shadow', cursive;*/
+/*}*/
+
+.form-header h2 {
+  font-family: 'Righteous', cursive;
+  font-size: 48px;
+  letter-spacing: 1px;
 }
 
 ::-webkit-input-placeholder { /* Edge */
