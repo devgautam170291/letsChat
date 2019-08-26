@@ -1,4 +1,4 @@
-<div id="chatbox">
+<div id="chatbox" style="height: 600px" >
   <div class="header">
     <div class="row">
       <div class="col-md-4">
@@ -14,28 +14,88 @@
             <div class="col-md-6">
               <div class="d-table">
                 <div class="group-btn text-right">
-                  <button class="btn btn-primary mr-2">Create Group</button>
+                  <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#grp-modal">Create Group</button>
                   <button class="btn btn-primary">Search Friend</button>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="user-info">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="user-avatar"></div>
+                <div class="d-table">
+                  <div class="user-name d-table-row">Devesh</div>
+                  <div class="user-logout d-table-row">
+                    <a class="logout" href="">Logout</a>
                   </div>
-                  <div class="col-md-6">
-                    <div class="d-table">
-                      <div class="user-name">Devesh</div>
-                    </div>
 
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="chatbox-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="connected-users">
+
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="msg-wrapper">
+          <div class="msg-display-screen">
+
+          </div>
+          <div class="msg-send">
+            <div class="row">
+              <div class="col-md-9">
+                <input type="text" class="form-control display-inline-block" placeholder="Type Here">
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-primary display-inline-block">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="grp-modal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Create Group</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="grpname">Enter Group Name</label>
+          <input id="grpname" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="addpart">Add Participants</label>
+          <div class="row">
+            <div class="col-md-8">
+              <input id="addpart" type="text" class="form-control" />
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-primary">Add</button>
+            </div>
+          </div>
+          <div id="part-list">
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

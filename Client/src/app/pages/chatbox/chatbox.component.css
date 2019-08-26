@@ -25,9 +25,38 @@
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
+  text-align: right;
 }
 
 .header {
   border-bottom: 1px solid #ccc;
   padding: 10px 0px;
+}
+
+.msg-send button{
+  width: 100%;
+}
+
+.msg-display-screen {
+  height: 435px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  background: #fbfbfb;
+}
+
+.connected-users {
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #ccc;
+}
+
+.modal-title {
+  font-family: 'Righteous', cursive;
+  font-size: 28px !important;
+}
+
+.user-logout {
+  text-align: right;
+  width: 100%;
 }
