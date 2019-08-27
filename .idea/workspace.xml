@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fbcf8e63-d21e-4b2a-9f2c-bd0b894a42f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/app/pages/chatbox/chatbox.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/app/pages/chatbox/chatbox.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/app/pages/chatbox/chatbox.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/app/pages/chatbox/chatbox.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/app/pages/chatbox/chatbox.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/app/pages/chatbox/chatbox.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/app/pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,12 +17,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="171" />
-    <option name="y" value="-4" />
-    <option name="width" value="1279" />
-    <option name="height" value="724" />
   </component>
   <component name="ProjectId" id="1OP0fgMRpmW7ClyOCqUbOz8uJn4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -68,6 +67,10 @@
       <workItem from="1564638692121" duration="660000" />
       <workItem from="1564639376445" duration="13416000" />
       <workItem from="1565008576072" duration="736000" />
+      <workItem from="1566477632299" duration="2536000" />
+      <workItem from="1566480209184" duration="1375000" />
+      <workItem from="1566814324651" duration="3504000" />
+      <workItem from="1566896742525" duration="3519000" />
     </task>
     <servers />
   </component>

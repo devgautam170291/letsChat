@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class ChatboxComponent implements OnInit {
 
   constructor() { }
+  showFrndSearch: boolean = false;
 
   ngOnInit() {
+  }
+
+  showFrnd(val){
+    if(this.showFrndSearch === val){
+      return;
+    }
+    this.showFrndSearch = val;
   }
 
 }

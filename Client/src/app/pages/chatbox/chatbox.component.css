@@ -3,6 +3,8 @@
   padding: 10px;
   border: 1px solid #ccc;
   box-shadow: 0px 0px 2px 0px #ccc;
+  position: relative;
+  overflow: hidden;
 }
 .user-avatar {
   width: 100px;
@@ -43,6 +45,7 @@
   border-bottom: 1px solid #ccc;
   padding: 10px;
   background: #fbfbfb;
+  overflow: auto;
 }
 
 .connected-users {
@@ -59,4 +62,49 @@
 .user-logout {
   text-align: right;
   width: 100%;
+}
+
+.my-msg {
+  float: right;
+  padding: 5px 10px;
+  background: #3bb900;
+  border-radius: 5px;
+  color: #ffffff;
+  clear: both;
+  margin-bottom: 5px;
+}
+
+.your-msg {
+  float: left;
+  clear: both;
+  padding: 5px 10px;
+  background: #bb0c41;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#search-frnd {
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  transition: 0.5s ease;
+}
+
+.close-frnd {
+  right: -500px !important;
+}
+
+.open-frnd {
+  right: 0px !important;
+}
+
+.close-btn .fa {
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  left: 2px;
 }

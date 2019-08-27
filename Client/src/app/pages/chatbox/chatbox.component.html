@@ -15,7 +15,7 @@
               <div class="d-table">
                 <div class="group-btn text-right">
                   <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#grp-modal">Create Group</button>
-                  <button class="btn btn-primary">Search Friend</button>
+                  <button class="btn btn-primary" (click)="showFrnd(true)">Search Friend</button>
                 </div>
               </div>
             </div>
@@ -45,7 +45,8 @@
       <div class="col-md-8">
         <div class="msg-wrapper">
           <div class="msg-display-screen">
-
+            <div class="my-msg">Hello</div>
+            <div class="your-msg">Hi</div>
           </div>
           <div class="msg-send">
             <div class="row">
@@ -59,6 +60,17 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div id="search-frnd" [ngClass]="showFrndSearch ? 'open-frnd' : 'close-frnd'">
+    <div class="close-search-frnd">
+      <div class="close-btn">
+        <i class="fa fa-times-circle d-inline-block" (click)="showFrnd(false)" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="frnd-search-box"></div>
+    <div class="frnd-list">
+
     </div>
   </div>
 </div>
